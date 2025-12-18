@@ -8,10 +8,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <button id="counter" type="button"></button>
     </div>
 
-    <a href="https://www.popwebdesign.net/" target="_blank">popart</a>
-    </br>
-    <a href="https://www.pinterest.com/netfixstudio/" target="_blank">netfixstudio - Pinterest</a>
-
+ 
   </div>
 `
 

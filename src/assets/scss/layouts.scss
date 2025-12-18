@@ -15,3 +15,17 @@
         }
     }
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navigation {
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+            padding: 0;
+        }
+    }
+}
