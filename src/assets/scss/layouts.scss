@@ -1,0 +1,17 @@
+.hero-section {
+    display: flex;
+    
+
+    .container {
+        .big-header {
+            background-image: url(../images/W.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: auto;
+            padding-block: 7rem;
+            .hOneFunctional {
+                font-size: 4.5rem;
+            }
+        }
+    }
+}

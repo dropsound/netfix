@@ -1,0 +1,14 @@
+.service-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: black;
+    max-width: calc(100% / 4);
+    flex: 1;
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
