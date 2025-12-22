@@ -121,4 +121,58 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  /* -------------------------------
+ * SECTION FOCUS (Scroll Spy)
+ * ----------------------------- */
+document.querySelectorAll<HTMLElement>("section").forEach(section => {
+  ScrollTrigger.create({
+    trigger: section,
+    start: "top center",
+    end: "bottom center",
+    onEnter: () => setActiveSection(section),
+    onEnterBack: () => setActiveSection(section),
+  });
+});
+
+function setActiveSection(active: HTMLElement) {
+  document.querySelectorAll("section").forEach(section => {
+    section.classList.toggle("is-active", section === active);
+  });
+}
+
+
+/*--------BUDGET SERVICE-----------*/
+const serviceItems = document.querySelectorAll<HTMLElement>(".services-group .checkbox");
+const budgetRadios = document.querySelectorAll<HTMLInputElement>('input[name="budget"]');
+
+function updateServicesByBudget(budget: number) {
+  serviceItems.forEach(item => {
+    const minBudget = Number(item.dataset.minBudget);
+    const checkbox = item.querySelector<HTMLInputElement>("input");
+    if (!checkbox) return;
+
+    if (budget < minBudget) {
+      checkbox.checked = false;
+      checkbox.disabled = true;
+      item.classList.add("is-disabled");
+    } else {
+      checkbox.disabled = false;
+      item.classList.remove("is-disabled");
+    }
+  });
+}
+
+// Listen for changes on budget radios
+budgetRadios.forEach(radio => {
+  radio.addEventListener("change", () => {
+    const value = Number((document.querySelector('input[name="budget"]:checked') as HTMLInputElement).value);
+    updateServicesByBudget(value);
+  });
+});
+
+// Initialize on page load
+const initialBudget = Number((document.querySelector('input[name="budget"]:checked') as HTMLInputElement).value);
+updateServicesByBudget(initialBudget);
+
+
 });

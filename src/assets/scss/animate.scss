@@ -10,3 +10,18 @@
   line-height: 0.9;
 }
 
+section {
+  transition: filter 0.4s ease, opacity 0.4s ease;
+}
+
+/* Default: slightly muted */
+section:not(.is-active) {
+  opacity: 0.9;
+  filter: blur(0.5px);
+}
+
+/* Active section */
+section.is-active {
+  opacity: 1;
+  filter: blur(0);
+}

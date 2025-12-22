@@ -20,6 +20,7 @@ section {
     max-width: 1280px;
     margin-inline: auto;
     padding-inline: 1rem;
+    min-height: calc(100vh - 105px);
     .container {
         width: auto;
         @media all and (min-width: 1400px) {
@@ -44,10 +45,13 @@ body {
   place-items: normal;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+
 }
 
 html {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 
@@ -114,8 +118,10 @@ button:focus-visible {
 }
 
 .logotype {
-    max-width: 100px;
-    width: 100px;
+  img {
+    width: 150px;
+    height: auto;
+  }
 }
 
 header {
@@ -123,14 +129,15 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding-block: 2rem;
+    padding-block: 1.5rem;
     border-bottom: 1px solid rgba(#F99D3E, 0.5);
     background-color: #242424;
     z-index: 1200;
-    padding-inline: 1rem;
+    
     nav {
         max-width: 1280px;
         margin-inline: auto;
+        padding-inline: 1rem;
     }
 }
 
@@ -155,3 +162,4 @@ footer {
   padding-block: 3rem;
   text-align: center;
 }
+

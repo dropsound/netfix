@@ -57,7 +57,7 @@
       </div>
       <div class="pre-header">
         <h2 class="pre-line">Ako Vaš web sajt <strong>NE</strong> izgleda kako ste zamislili</h2>
-        <h2 class="pre-line">Korisnici imaju <strong>PROBLEM</strong> kada ga koriste na mobilnom telefonu</h2>
+        <h2 class="pre-line">Korisnici imaju <strong>PROBLEM</strong> pri korišćenju</h2>
         <h2 class="pre-line">Funkcionalnosti <strong>NISU</strong> kako treba...</h2>
         <br>
         <h2 class="pre-line">Mi smo tu da <strong>otklonimo</strong> takve probleme </h2>
@@ -71,8 +71,14 @@
   <section id="about" class="about-section" >
     <div class="container">
       <h2>O nama</h2>
-      <p>NetFix je kompanija za web razvoj koja pruža prilagođena i usklađena web development rešenja za Vaše potrebe, i to po pristupačnoj ceni.</p>
-      <p>10+ godina iskustva u radu sa startup-ima i kompanijama koje žele da unaprede svoj online nastup.</p>
+      <p><span class="orangeText">Net</span>Fix je studio za web razvoj koja pruža prilagođena i usklađena web development rešenja za Vaše potrebe, i to po pristupačnoj ceni.</p>
+      <p>10+ godina iskustva u radu sa kompanijama i startup-ima koji žele da unaprede svoj online nastup.</p>
+      <p>Nudimo profesionalne web dizajn usluge za sve vrste sajtova.</p>
+      <p>Našim angažmanom unapredite rangiranje u pretrazi i korisničko iskustvo sajta, i povećajte Vaš online profit.</p>
+      <h2>Saradnja sa nama Vam donosi mnoge prednosti u odnosu na konkurenciju.</h2>
+      <p>Vebsajt promoviše Vaš brend 24/7 a mi smo tu da to bude promocija na pravi način.</p>
+      <p>Konverzija korisnika u zadovoljne klijente je ono što će Vaš brend učiniti još snajžnijim.</p>
+      <p>Upravo će efikasan web dizajn ubediti potrošača da izabere baš Vaš brend.</p>
     </div>
   </section>
 
@@ -142,6 +148,7 @@
         <li>Fokus na korisnički centriran dizajn</li>
         <li>Brza i moderna implementacija</li>
         <li>Transparentna komunikacija i saradnja</li>
+        <li>Posvećenost pri kreiranju sajta koji adekvatno predstavlja Vaš brend.</li>
       </ul>
       <p>Kombinujemo dizajn i razvoj da isporučimo web sajtove koji izgledaju sjajno i besprekorno funkcionišu.</p>
     </div>
@@ -152,10 +159,10 @@
     <div class="container">
       <h2>Šta klijenti kažu</h2>
       <div class="testimonial">
-        <p>„Odlična saradnja, web sajt nam je značajno poboljšao prisustvo online.“ – Marko, XYZ Company</p>
+        <p>„Odlična saradnja, web sajt nam je značajno poboljšao prisustvo online.“ – Marko, FlyingV</p>
       </div>
       <div class="testimonial">
-        <p>„Profesionalno i precizno izvršeno, preporučujemo!“ – Ana, ABC Startup</p>
+        <p>„Profesionalno i precizno izvršeno, preporučujemo!“ – Ana, Portas</p>
       </div>
     </div>
   </section>
@@ -163,13 +170,68 @@
   <!-- CONTACT SECTION -->
   <section id="contact" class="contact-section" >
     <div class="container">
-      <h2>Spremni da unapredite vaš web sajt?</h2>
+      <h2>Spremni ste da unapredite web sajt Vašeg brenda?</h2>
       <p>Kontaktirajte nas i ostvarimo vašu viziju zajedno.</p>
-      <a href="#form" class="btn btn-primary">Zatraži besplatnu konsultaciju</a>
+      <p>Zatražite besplatnu konsultaciju.</p>
       <form id="form" class="contact-form">
         <input type="text" placeholder="Ime" required>
         <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Tip projekta" required>
+
+        <div class="budget-radio-group">
+          <p class="form-label">Koje budžet planirate?</p>
+          <div class="budget-group">
+            <label class="radio-container">50€
+              <input type="radio" name="budget" value="50" checked>
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-container">100€
+              <input type="radio" name="budget" value="100">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-container">300€
+              <input type="radio" name="budget" value="300">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-container">500€
+              <input type="radio" name="budget" value="500">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-container">1000€>
+              <input type="radio" name="budget" value="1000">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group services-group">
+          <p class="form-label">Koje usluge su vam potrebne?</p>
+
+          <label class="checkbox" data-min-budget="50">
+            <input type="checkbox" name="services[]" value="Graphic design">
+            <span>Grafički dizajn</span>
+          </label>
+
+          <label class="checkbox" data-min-budget="100">
+            <input type="checkbox" name="services[]" value="Website redesign">
+            <span>Redizajn web sajta</span>
+          </label>
+
+          <label class="checkbox" data-min-budget="300">
+            <input type="checkbox" name="services[]" value="Web design">
+            <span>Web dizajn</span>
+          </label>
+
+          <label class="checkbox" data-min-budget="500">
+            <input type="checkbox" name="services[]" value="UI/UX design">
+            <span>UI / UX dizajn</span>
+          </label>
+
+          <label class="checkbox" data-min-budget="1000">
+            <input type="checkbox" name="services[]" value="Frontend development">
+            <span>Web aplikacije / Web shop</span>
+          </label>
+
+          
+        </div>
         <button type="submit" class="btn btn-primary">Pošalji</button>
       </form>
     </div>
@@ -188,6 +250,5 @@
   </footer>
 
     <script type="module" src="/src/main.ts"></script>
-<!--     <script type="module" src="./src/assets/js/hero-animation.js"></script>
- -->  </body>
+ </body>
 </html>

@@ -1,5 +1,4 @@
 .intro-section {
-    padding-block: 5rem;
     .container {
         display: flex;
         gap: 2rem;
@@ -31,20 +30,20 @@
             background-repeat: no-repeat;
             background-position: right;
             background-size: 100%;
-            padding-block: 7rem;
+            padding-block: 4rem 1rem;
             @media all and (min-width: 1400px) {
                 background-size: 50%;
             }
             .hOneModern {
-            font-size: clamp(3rem, 1.5rem + 5vw, 7rem);
+            font-size: clamp(2.5rem, 1.5rem + 5vw, 7rem);
             }
 
             .hOneFunctional {
-            font-size: clamp(2.4rem, 1.2rem + 3vw, 4.5rem);
+            font-size: clamp(1.5rem, 1.2rem + 3vw, 4.5rem);
             }
 
             .hOneOrigigi {
-            font-size: clamp(2.8rem, 1.4rem + 4vw, 5.7rem);
+            font-size: clamp(1.75rem, 1.4rem + 4vw, 5.7rem);
             }
         }
     }
@@ -60,10 +59,17 @@ nav {
             display: flex;
             gap: 1rem;
             padding: 0;
+            margin: 0;
         }
     }
 }
 
-section {
-    min-height: calc(100vh - 120px);
+.contact-section, .testimonials-section, .why-us-section, .portfolio-section, .services-section, .about-section, .intro-section {
+    display: flex;
+    align-items: center;
+}
+
+.contact-section {
+    min-height: calc(100dvh - 105px);
+    padding-bottom: 2rem;
 }
